@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="min-h-[90vh] bg-gradient-to-r from-slate-900 to-slate-700 gap-10 p-[5%] text-white font-poppins flex flex-row justify-center w-[100%] items-center flex-wrap">
       <motion.div
-        className="border-2 border-white p-4 md:max-w-[40%] max-w-[80%] text-center flex-col flex gap-5 items-center"
+        className="border-2 border-white p-4 md:max-w-[40%] max-w-[90%] text-center flex-col flex gap-5 items-center"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}

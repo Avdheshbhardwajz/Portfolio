@@ -35,11 +35,17 @@ const Home = () => {
           graphic design ensures a holistic approach to digital development.
           Let’s transform your vision into a seamless online experience that
           drives results.
-          <div className="flex flex-row justify-center gap-10 p-4">
-            <Link to="/about" className="border-2 border-white px-4 py-2">
+          <div className="flex flex-row justify-center gap-5 m-4">
+            <Link
+              to="/about"
+              className="border-2 border-white px-4 py-2 text-sm"
+            >
               Know More
             </Link>
-            <Link to="/contact" className="border-2 border-white px-4 py-2">
+            <Link
+              to="/contact"
+              className="border-2 border-white px-4 py-2 text-sm"
+            >
               Book a Session
             </Link>
           </div>

@@ -60,39 +60,39 @@ const AccordionItem = ({ title, content }) => {
 const About = () => {
   const accordionItems = [
     {
-      title: "What is Tailwind CSS?",
+      title: "Avdhesh, can you tell me a bit about yourself?",
       content:
-        "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs without having to leave your HTML.",
+        "Absolutely! I'm Avdhesh, a seasoned Full Stack Web Developer with extensive expertise in JavaScript, React, Node.js, MongoDB and Express. I have a strong background in front-end development, UI/UX design, and WordPress. I’m passionate about creating engaging and scalable web applications that solve business problems and add value to companies",
     },
     {
-      title: "What is Framer Motion?",
+      title: "What skills do you bring to the table, Avdhesh?",
       content:
-        "Framer Motion is a library for animations in React. It provides powerful and simple animation capabilities for components with a straightforward API.",
+        " I specialize in Full Stack Web Development, UI/UX Design, WordPress Development, and E-commerce Solutions. Additionally, I have experience in Video Editing & Production, Graphic Design, and Web Hosting & Deployment. My diverse skill set allows me to deliver comprehensive web-based solutions.",
     },
     {
-      title: "How do you use Tailwind CSS?",
+      title: "In which areas can you serve us, Avdhesh?",
       content:
-        "Tailwind CSS is used by adding utility classes directly to your HTML or JSX elements. You configure your design system through a configuration file.",
+        "I can assist with developing and deploying full stack web applications, designing intuitive and engaging user interfaces, creating custom WordPress websites, and developing e-commerce platforms. I also offer video editing, graphic design, and web hosting services to ensure a complete and professional online presence.",
     },
     {
-      title: "How do you use Tailwind CSS?",
+      title: "Can you share some of your past experiences with us, Avdhesh?",
       content:
-        "Tailwind CSS is used by adding utility classes directly to your HTML or JSX elements. You configure your design system through a configuration file.",
+        "Certainly! I developed a Full Stack e-commerce application with features like product management, a shopping cart, and payment gateway integration. I also created a WordPress website for Patanjali Naturopathy Hospital with a therapy booking system. Additionally, I worked with an SDE-2 at Amazon USA, helping him grow his YouTube and LinkedIn presence to over 5 million views and 50k subscribers on YouTube, and 100k+ followers on LinkedIn.",
     },
     {
-      title: "How do you use Tailwind CSS?",
+      title: "What are some of your key achievements, Avdhesh?",
       content:
-        "Tailwind CSS is used by adding utility classes directly to your HTML or JSX elements. You configure your design system through a configuration file.",
+        "One of my notable achievements is producing a video that was showcased to multiple ministers, including Yogi Adityanath Ji, and contributing to the *Rashtra Raksha Sutra* prospectus presented to PM Narendra Modi Ji. I also successfully developed and launched the official website for Patanjali Naturopathy Hospital, enhancing their brand presence online.",
     },
     {
-      title: "How do you use Tailwind CSS?",
+      title: " How do you approach your projects, Avdhesh?",
       content:
-        "Tailwind CSS is used by adding utility classes directly to your HTML or JSX elements. You configure your design system through a configuration file.",
+        "I approach each project with a focus on understanding the client’s needs and goals. I prioritize creating a user-friendly experience, maintaining brand consistency, and delivering high-quality, scalable solutions. My goal is to ensure that each project not only meets but exceeds client expectations.",
     },
     {
-      title: "How do you use Tailwind CSS?",
+      title: " Why should we choose you, Avdhesh?",
       content:
-        "Tailwind CSS is used by adding utility classes directly to your HTML or JSX elements. You configure your design system through a configuration file.",
+        "You should choose me because I bring a comprehensive skill set, a proven track record of successful projects, and a dedication to delivering high-quality solutions. My diverse experience allows me to handle various aspects of web development and design, ensuring a cohesive and professional result for your business.",
     },
   ];
 

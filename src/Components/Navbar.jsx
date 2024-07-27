@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gradient-to-r from-slate-900 to-slate-700 text-white w-full h-[10vh] p-4 text-xl z-10">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center h-full">
-        <div className="text-2xl font-bold text-white font-poppins">
+        <div className="text-xl font-bold text-white font-poppins">
           <Link to="/">A. Bhardwaj</Link>
         </div>
         <div className="hidden md:flex space-x-6 font-poppins">
@@ -99,28 +99,28 @@ const Navbar = () => {
             </button>
             <Link
               to="/"
-              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-bold"
+              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light"
               onClick={toggleMenu}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-bold"
+              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light"
               onClick={toggleMenu}
             >
               About
             </Link>
             <Link
               to="/services"
-              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-bold"
+              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light"
               onClick={toggleMenu}
             >
               Services
             </Link>
             <Link
               to="/contact"
-              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-bold"
+              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light"
               onClick={toggleMenu}
             >
               Contact Us

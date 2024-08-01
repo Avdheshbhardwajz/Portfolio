@@ -1,157 +1,74 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import img from "../assets/imgg.png"; // Import the image
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+const Home = () => {
   return (
-    <nav className="bg-gradient-to-r from-slate-900 to-slate-700 text-white w-full h-[10vh] p-4 text-xl z-10 relative ">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center h-full">
-        <div className="text-xl font-bold text-white font-poppins">
-          <Link to="/">A. Bhardwaj</Link>
-        </div>
-        <div className="hidden md:flex justify-center  items-center space-x-6 font-poppins">
-          <Link to="/" className="text-white hover:text-blue-500">
-            Home
-          </Link>
-          <Link to="/about" className="text-white hover:text-blue-500">
-            About
-          </Link>
-          <Link to="/services" className="text-white hover:text-blue-500">
-            Services
-          </Link>
-          <Link to="/contact" className="text-white hover:text-blue-500">
-            Contact Us
-          </Link>
-          <a
-            target="_blank"
-            href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=66a38b7d6e6b499ee335b3ac"
-            download
-            className="text-white hover:text-blue-500 border-2 border-white px-4 py-2 rounded font-poppins"
-          >
-            Resume
-          </a>
-        </div>
-        <div className="md:hidden flex items-center">
-          <a
-            href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=66a38b7d6e6b499ee335b3ac" // Replace with the actual path to your resume
-            download
-            className="text-white hover:text-blue-500 border-2 border-white px-4 py-2 rounded font-poppins mr-4"
-          >
-            Resume
-          </a>
-          <button
-            onClick={toggleMenu}
-            className="text-white focus:outline-none"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              {isOpen ? (
-                <motion.path
-                  d="M6 18L18 6M6 6l12 12"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                />
-              ) : (
-                <motion.path
-                  d="M4 6h16M4 12h16m-7 6h7"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                />
-              )}
-            </svg>
-          </button>
-        </div>
-      </div>
-      <AnimatePresence>
-        {isOpen && (
+    <div className="flex flex-row justify-center gap-10 md:max-w-[70%] max-w-[90%] mx-auto my-auto flex-wrap-reverse min-h-[90vh] items-center">
+      <div className="md:max-w-[50%] font-poppins text-white flex flex-col gap-5 text-center justify-center">
+        <motion.h1
+          className="text-4xl font-bold"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          Full Stack Developer Crafting Impactful Web Experiences
+        </motion.h1>
+        <motion.p
+          className="font-light text-xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          With a passion for delivering business-driven web solutions, I
+          specialize in creating dynamic and responsive websites using
+          JavaScript. My diverse skill set in UI/UX design, video editing, and
+          graphic design ensures a holistic approach to digital development.
+          Let’s transform your vision into a seamless online experience that
+          drives results.
+        </motion.p>
+        <div className="flex flex-row justify-center gap-5 m-4">
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-            className="fixed top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-gradient-to-r from-slate-900 to-slate-700 text-white z-10 md:hidden"
+            transition={{ duration: 1, delay: 1.5 }}
           >
-            <button
-              onClick={toggleMenu}
-              className="absolute top-4 right-4 text-white focus:outline-none"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <motion.path
-                  d="M6 18L18 6M6 6l12 12"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                />
-              </svg>
-            </button>
-            <Link
-              to="/"
-              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light"
-              onClick={toggleMenu}
-            >
-              Home
-            </Link>
             <Link
               to="/about"
-              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light"
-              onClick={toggleMenu}
+              className="border-2 border-white px-4 py-2 text-md"
             >
-              About
+              Know More
             </Link>
-            <Link
-              to="/services"
-              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light"
-              onClick={toggleMenu}
-            >
-              Services
-            </Link>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.5 }}
+          >
             <Link
               to="/contact"
-              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light"
-              onClick={toggleMenu}
+              className="border-2 border-white px-4 py-2 text-md"
             >
-              Contact Us
+              Book a Session
             </Link>
-            <a
-              href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=66a38b7d6e6b499ee335b3ac" // Replace with the actual path to your resume
-              download
-              className="text-white hover:text-blue-500 border-2 border-white px-4 py-2 rounded font-poppins mb-6"
-            >
-              Resume
-            </a>
           </motion.div>
-        )}
-      </AnimatePresence>
-    </nav>
+        </div>
+      </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1.5 }}
+      >
+        <img
+          src={img} // Use the imported image here
+          className="border-2 border-white rounded-full p-0 max-w-sm"
+          alt="Example"
+        />
+      </motion.div>
+    </div>
   );
 };
 
-export default Navbar;
+export default Home;

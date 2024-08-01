@@ -1,22 +1,13 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div className="  h-[90vh] bg-gradient-to-r from-slate-900 to-slate-700 text-white font-poppins flex flex-row justify-center items-center content-center box-border m-0">
-      <div className="max-w-[90%]  md:max-w-[60%] border-2 border-white p-[5%] text-center flex flex-col gap-5 md:gap-10 relative">
-        <motion.h2
-          className="text-lg md:text-2xl font-bold"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0 }}
-        >
-          Innovative Solutions for Modern Businesses
-        </motion.h2>
+    <div className="flex flex-row justify-center gap-10 md:max-w-[70%] max-w-[90%] mx-auto my-auto flex-wrap-reverse min-h-[90vh] items-center">
+      <div className="md:max-w-[50%] font-poppins text-white flex flex-col gap-5 text-center justify-center">
         <motion.h1
-          className="text-2xl md:text-6xl font-extrabold"
+          className="text-4xl font-bold"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -24,7 +15,7 @@ const Home = () => {
           Full Stack Developer Crafting Impactful Web Experiences
         </motion.h1>
         <motion.p
-          className="text-sm leading-6 md:text-xl font-light"
+          className="font-light text-xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
@@ -35,22 +26,45 @@ const Home = () => {
           graphic design ensures a holistic approach to digital development.
           Let’s transform your vision into a seamless online experience that
           drives results.
-          <div className="flex flex-row justify-center gap-5 m-4">
+        </motion.p>
+        <div className="flex flex-row justify-center gap-5 m-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.5 }}
+          >
             <Link
               to="/about"
-              className="border-2 border-white px-4 py-2 text-sm"
+              className="border-2 border-white px-4 py-2 text-md"
             >
               Know More
             </Link>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.5 }}
+          >
             <Link
               to="/contact"
-              className="border-2 border-white px-4 py-2 text-sm"
+              className="border-2 border-white px-4 py-2 text-md"
             >
               Book a Session
             </Link>
-          </div>
-        </motion.p>
+          </motion.div>
+        </div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1.5 }}
+      >
+        <img
+          src="src/assets/imgg.png"
+          className="border-2 border-white rounded-full p-0 max-w-sm"
+        />
+      </motion.div>
     </div>
   );
 };

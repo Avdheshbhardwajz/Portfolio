@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-slate-900 to-slate-700 text-white w-full h-[10vh] p-4 text-xl z-10 relative">
+    <nav className="bg-gradient-to-r from-slate-900 to-slate-700 text-white w-full h-[10vh] p-4 text-xl z-10 relative ">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center h-full">
         <div className="text-xl font-bold text-white font-poppins">
           <Link to="/">A. Bhardwaj</Link>

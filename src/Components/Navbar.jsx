@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,9 @@ const Navbar = () => {
     <nav className="bg-gradient-to-r from-slate-900 to-slate-700 text-white w-full h-[10vh] p-4 text-xl z-10 relative ">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center h-full">
         <div className="text-xl font-bold text-white font-poppins">
-          <Link to="/">A. Bhardwaj</Link>
+          <Link to="/">
+            <img width="64" height="64" src={logo} alt="source-code--v3" />
+          </Link>
         </div>
         <div className="hidden md:flex justify-center  items-center space-x-6 font-poppins">
           <Link to="/" className="text-white hover:text-blue-500">
@@ -41,7 +44,7 @@ const Navbar = () => {
           <a
             href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=66a38b7d6e6b499ee335b3ac" // Replace with the actual path to your resume
             download
-            className="text-white hover:text-blue-500 border-2 border-white px-4 py-2 rounded font-poppins mr-4"
+            className="text-white hover:text-blue-500  text-md px-4 py-2 rounded font-poppins mr-4"
           >
             Resume
           </a>

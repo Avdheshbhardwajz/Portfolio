@@ -5,7 +5,7 @@ import img from "../assets/imgg.png";
 
 const Home = () => {
   return (
-    <div className="flex flex-row justify-center gap-10 md:max-w-[70%] max-w-[95%] px-[3%] py-[20%] mx-auto my-auto flex-wrap-reverse min-h-[90vh] items-center">
+    <div className="flex flex-row justify-center gap-10 md:max-w-[70%] max-w-[95%] px-[3%] py-[20%] sm:py-[1%] mx-auto my-auto flex-wrap-reverse min-h-[90vh] items-center">
       <div className="md:max-w-[50%] font-poppins text-white flex flex-col gap-5 text-center justify-center">
         <motion.h1
           className="sm:text-4xl text-2xl font-bold"

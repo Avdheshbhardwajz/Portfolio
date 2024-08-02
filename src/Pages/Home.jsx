@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import img from "../assets/imgg.png";
 
 const Home = () => {
   return (
@@ -61,7 +62,7 @@ const Home = () => {
         transition={{ duration: 1, delay: 1.5 }}
       >
         <img
-          src="src/assets/imgg.png"
+          src={img}
           className="border-2 border-white rounded-full p-0 max-w-sm"
         />
       </motion.div>

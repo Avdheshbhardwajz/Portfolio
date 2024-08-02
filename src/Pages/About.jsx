@@ -21,6 +21,7 @@ const About = () => {
   return (
     <motion.div
       className="grid grid-cols-1 md:grid-cols-6 gap-4 py-[5%] min-h-[100vh] text-white max-w-[90%] m-auto font-poppins"
+      id="About"
       initial="hidden"
       animate="visible"
       variants={containerVariants}

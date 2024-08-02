@@ -21,6 +21,7 @@ const Services = () => {
   return (
     <div className="min-h-[90vh] md:min-h-[90vh] p-8 md:p-5 box-border bg-gradient-to-r from-slate-900 to-slate-700 text-white font-poppins text-center flex flex-col justify-center items-center">
       <motion.div
+        id="Services"
         className="flex flex-row flex-wrap justify-center max-w-[70%] gap-8 min-h-[50%]"
         variants={containerVariants}
         initial="hidden"

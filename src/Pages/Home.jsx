@@ -2,11 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import img from "../assets/imgg.png";
+import { Link as ScrollLink } from "react-scroll";
 
 const Home = () => {
   return (
     <div className="flex flex-row justify-center gap-10 md:max-w-[70%] max-w-[95%] px-[3%] py-[20%] sm:py-[1%] mx-auto my-auto flex-wrap-reverse min-h-[90vh] items-center">
-      <div className="md:max-w-[50%] font-poppins text-white flex flex-col gap-5 text-center justify-center">
+      <div
+        className="md:max-w-[50%] font-poppins text-white flex flex-col gap-5 text-center justify-center"
+        id="Home"
+      >
         <motion.h1
           className="sm:text-4xl text-2xl font-bold"
           initial={{ opacity: 0, y: 20 }}
@@ -34,24 +38,28 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.5 }}
           >
-            <Link
-              to="/about"
-              className="border-2 border-white px-4 py-2 text-md"
+            <ScrollLink
+              to="About"
+              smooth={true}
+              duration={500}
+              className="text-white hover:text-blue-500 cursor-pointer border-white border-2 px-4 py-2 text-md"
             >
               Know More
-            </Link>
+            </ScrollLink>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.5 }}
           >
-            <Link
-              to="/contact"
-              className="border-2 border-white px-4 py-2 text-md"
+            <ScrollLink
+              to="Contact"
+              smooth={true}
+              duration={500}
+              className="text-white hover:text-blue-500 cursor-pointer border-white border-2 px-4 py-2 text-md"
             >
-              Book a Session
-            </Link>
+              Contact Me
+            </ScrollLink>
           </motion.div>
         </div>
       </div>

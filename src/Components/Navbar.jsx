@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
@@ -11,26 +12,46 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-slate-900 to-slate-700 text-white w-full h-[10vh] p-4 text-xl z-10 relative ">
+    <nav className="bg-gradient-to-r from-slate-900 to-slate-700 text-white w-full h-[10vh] p-4 text-xl z-10 relative">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center h-full">
         <div className="text-xl font-bold text-white font-poppins">
-          <Link to="/">
+          <RouterLink to="/">
             <img width="64" height="64" src={logo} alt="source-code--v3" />
-          </Link>
+          </RouterLink>
         </div>
-        <div className="hidden md:flex justify-center  items-center space-x-6 font-poppins">
-          <Link to="/" className="text-white hover:text-blue-500">
+        <div className="hidden md:flex justify-center items-center space-x-6 font-poppins">
+          <ScrollLink
+            to="Home"
+            smooth={true}
+            duration={500}
+            className="text-white hover:text-blue-500 cursor-pointer"
+          >
             Home
-          </Link>
-          <Link to="/about" className="text-white hover:text-blue-500">
+          </ScrollLink>
+          <ScrollLink
+            to="About"
+            smooth={true}
+            duration={500}
+            className="text-white hover:text-blue-500 cursor-pointer"
+          >
             About
-          </Link>
-          <Link to="/services" className="text-white hover:text-blue-500">
+          </ScrollLink>
+          <ScrollLink
+            to="Services"
+            smooth={true}
+            duration={500}
+            className="text-white hover:text-blue-500 cursor-pointer"
+          >
             Services
-          </Link>
-          <Link to="/contact" className="text-white hover:text-blue-500">
+          </ScrollLink>
+          <ScrollLink
+            to="Contact"
+            smooth={true}
+            duration={500}
+            className="text-white hover:text-blue-500 cursor-pointer"
+          >
             Contact Us
-          </Link>
+          </ScrollLink>
           <a
             target="_blank"
             href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=66a38b7d6e6b499ee335b3ac"
@@ -44,7 +65,7 @@ const Navbar = () => {
           <a
             href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=66a38b7d6e6b499ee335b3ac" // Replace with the actual path to your resume
             download
-            className="text-white hover:text-blue-500  text-md px-4 py-2 rounded font-poppins mr-4"
+            className="text-white hover:text-blue-500 text-md px-4 py-2 rounded font-poppins mr-4"
           >
             Resume
           </a>
@@ -115,34 +136,42 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-            <Link
-              to="/"
-              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light"
+            <ScrollLink
+              to="Home"
+              smooth={true}
+              duration={500}
+              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light cursor-pointer"
               onClick={toggleMenu}
             >
               Home
-            </Link>
-            <Link
-              to="/about"
-              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light"
+            </ScrollLink>
+            <ScrollLink
+              to="About"
+              smooth={true}
+              duration={500}
+              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light cursor-pointer"
               onClick={toggleMenu}
             >
               About
-            </Link>
-            <Link
-              to="/services"
-              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light"
+            </ScrollLink>
+            <ScrollLink
+              to="Services"
+              smooth={true}
+              duration={500}
+              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light cursor-pointer"
               onClick={toggleMenu}
             >
               Services
-            </Link>
-            <Link
-              to="/contact"
-              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light"
+            </ScrollLink>
+            <ScrollLink
+              to="Contact"
+              smooth={true}
+              duration={500}
+              className="text-white hover:text-blue-500 text-2xl mb-4 font-poppins font-light cursor-pointer"
               onClick={toggleMenu}
             >
               Contact Us
-            </Link>
+            </ScrollLink>
             <a
               href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=66a38b7d6e6b499ee335b3ac" // Replace with the actual path to your resume
               download

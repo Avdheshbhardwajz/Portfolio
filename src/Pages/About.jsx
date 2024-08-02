@@ -66,7 +66,7 @@ const About = () => {
         variants={itemVariants}
       >
         <h2 className="text-xl font-bold">some of my past experiences</h2>
-        <p className="max-w-[70%] leading-7">
+        <p className="max-w-[90%] leading-7">
           I'm Avdhesh, a seasoned Full Stack Web Developer with extensive
           expertise in JavaScript, React, Node.js, MongoDB and Express. I have a
           strong background in front-end development, UI/UX design, and
@@ -79,7 +79,7 @@ const About = () => {
         variants={itemVariants}
       >
         <h2 className="text-xl font-bold">some of your key achievements</h2>
-        <p className="max-w-[80%] leading-7">
+        <p className="max-w-[90%] leading-7">
           One of my notable achievements is producing a video that was showcased
           to multiple ministers, including Yogi Adityanath Ji, and contributing
           to the *Rashtra Raksha Sutra* prospectus presented to PM Narendra Modi
@@ -93,7 +93,7 @@ const About = () => {
         variants={itemVariants}
       >
         <h2 className="text-xl font-bold">areas I can serve for you</h2>
-        <p className="max-w-[70%] leading-7">
+        <p className="max-w-[90%] leading-7">
           I can assist with developing and deploying full stack web
           applications, designing intuitive and engaging user interfaces,
           creating custom WordPress websites, and developing e-commerce

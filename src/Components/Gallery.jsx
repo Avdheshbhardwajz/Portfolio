@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import img1 from "../assets/1.jpg";
+import img2 from "../assets/2.jpg";
+import img3 from "../assets/3.jpg";
+import img4 from "../assets/4.jpg";
+import img5 from "../assets/5.jpg";
+import img6 from "../assets/6.jpg";
+import img7 from "../assets/7.jpg";
 
-const images = [
-  "https://via.placeholder.com/400x600?text=Image+1",
-  "https://via.placeholder.com/400x600?text=Image+2",
-  "https://via.placeholder.com/400x600?text=Image+3",
-  "https://via.placeholder.com/400x600?text=Image+4",
-  "https://via.placeholder.com/400x600?text=Image+5",
-];
+const images = [img3, img2, img1, img4, img5, img6, img7];
 
 const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,7 +24,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center  min-h-[60%] ">
+    <div className="flex flex-col items-center justify-center  min-h-[60%]  ">
       <div className="relative w-64 h-96 overflow-hidden  ">
         <motion.div
           key={currentIndex}

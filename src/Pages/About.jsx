@@ -67,11 +67,13 @@ const About = () => {
       >
         <h2 className="text-xl font-bold">some of my past experiences</h2>
         <p className="max-w-[90%] leading-7">
-          I'm Avdhesh, a seasoned Full Stack Web Developer with extensive
-          expertise in JavaScript, React, Node.js, MongoDB and Express. I have a
-          strong background in front-end development, UI/UX design, and
-          WordPress. I’m passionate about creating engaging and scalable web
-          applications that solve business problems and add value to companies
+          I developed a Full Stack e-commerce application with features like
+          product management, a shopping cart, and payment gateway integration.
+          I also created a WordPress website for Patanjali Naturopathy Hospital
+          with a therapy booking system. Additionally, I worked with an SDE-2 at
+          Amazon USA, helping him grow his YouTube and LinkedIn presence to over
+          5 million views and 50k subscribers on YouTube, and 100k+ followers on
+          LinkedIn
         </p>
       </motion.div>
       <motion.div
@@ -105,7 +107,7 @@ const About = () => {
         className="md:col-span-2 md:row-span-4 md:col-start-5 md:row-start-3 border-2 border-white p-5 flex flex-col justify-center items-center text-center gap-5"
         variants={itemVariants}
       >
-        <h2 className="text-4xl font-extrabold">Yeah this is me</h2>
+        <h2 className="text-4xl font-extrabold">Some Old Memories </h2>
         <Gallery />
       </motion.div>
     </motion.div>
